@@ -29,7 +29,17 @@ module.exports = appInfo => {
       app: true,
       // 是否加载到 agent 上，默认关闭
       agent: false,
+    },
+    security : {
+      　　csrf: {enable: false},
+      　　domainWhiteList: [ '*' ]
+    },
+    cors: {
+      origin: '*', //只允许这个域进行访问接口
+      credentials: true,   // 开启认证
+      allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
     }
+
   };
 
   // use for cookie sign key, should change to your own and keep security
