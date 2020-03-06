@@ -32,10 +32,10 @@ module.exports = appInfo => {
     },
     security : {
       　　csrf: {enable: false},
-      　　domainWhiteList: [ '*' ]
+      　　domainWhiteList: [ 'http://localhost:3000','http://localhost:8082']
     },
     cors: {
-      origin: 'http://localhost:3000', //只允许这个域进行访问接口
+     // origin: 'http://localhost:8082', //只允许这个域进行访问接口
       credentials: true,   // 开启认证
       allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
     }

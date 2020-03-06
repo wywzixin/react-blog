@@ -193,7 +193,6 @@ function AddArticle (props) {
                              size="large"  />
                         </Col>
                         <Col span={4}>
-                             &nbsp;
                              <Select defaultValue={selectedType} value={selectedType} size="large" onChange={selectTypeHandler}>
                                   {
                                       typeInfo.map ((item,index) => {
