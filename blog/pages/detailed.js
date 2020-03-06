@@ -32,7 +32,6 @@ const Detailed = (props) =>{
   marked.setOptions({
 
     renderer: renderer,
-
     gfm: true,
     pedantic: false,
     sanitize: false,
@@ -42,17 +41,12 @@ const Detailed = (props) =>{
     smartypants: false,
 
     highlight: function (code) {
-            return hljs.highlightAuto(code).value;
+          return hljs.highlightAuto(code).value;
     }
 
   }); 
 
-
-
     let html = marked(props.article_content) 
-
-
-
 
   return (
     <>
@@ -84,8 +78,6 @@ const Detailed = (props) =>{
 
                 <div className="detailed-content"  
                   dangerouslySetInnerHTML = {{__html:html}}   >
-
-
                 </div>
 
              </div>

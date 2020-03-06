@@ -8,7 +8,7 @@ import '../public/style/pages/index.css'
 import '../public/style/pages/comm.css'
 import Author from '../components/Author'
 import Advert from '../components/Advert'
-import  servicePath  from '../config/apiUrl'
+import servicePath  from '../config/apiUrl'
 import marked from 'marked'
 import hljs from "highlight.js";
 import 'highlight.js/styles/monokai-sublime.css';
